@@ -1,0 +1,73 @@
+
+
+.blok {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 57px;
+  }
+  
+  .scroll-container {
+    display: grid;
+    overflow: auto;
+    background-color: #f1f1f1;
+  }
+  
+  .scroll-top {
+    padding: 5%;
+    z-index: 4;
+    background-size: 89%;
+    max-height: 37px;
+    height: 102px;
+    background-color: #ccc;
+    background-image: url(jpg/top-svitok.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+  .scroll-middle {
+    background-size: 88%;
+    background-color: #ccc;
+    background-image: url(jpg/middle-svitok.png);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+  
+  .scroll-bottom {
+    padding: 5%;
+    z-index: 4;
+    max-height: 37px;
+    background-size: 89%;
+    height: 102px;
+    background-color: #ccc;
+    background-image: url(jpg/bottom-svitok.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+.content {
+    font-family: 'Vezitsa', arial;
+    font-size: 16px;
+    text-align: center;
+    width: 81%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.ssilka{
+    color: gray;
+}
+  
+  @media only screen and (max-width: 600px) {
+    .blok {
+      margin: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .blok {
+      margin: 100px;
+    }
+  }
+  
