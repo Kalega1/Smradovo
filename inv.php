@@ -134,7 +134,15 @@ if (!isset($_SESSION['id'])) {
         </div>
     </div>
 
-
+    <div class="crafting-container">
+    <h2>Рецепты крафта</h2>
+    <ul>
+        <?php if ($list_quantity >= 1 && $koren_quantity >= 1) { ?>
+            <li>Рецепт чая</li>
+        <?php } ?>
+        <!-- Добавьте здесь больше рецептов крафта на основе доступных ингредиентов -->
+    </ul>
+</div>
 
 
     <script>
@@ -195,7 +203,7 @@ if (!isset($_SESSION['id'])) {
                         $('.inventory-grid table tr:eq(8)').show();
                         $('.inventory-grid table tr:eq(8) td:eq(2)').text(data.koren_quantity);
                     } else {
-                        $('.inventory-grid table tr:eq(8)').hide();
+                        $('.inventory-grid table tr:eq(8)').hide(); 
                     }
                     if (data.ples_quantity) {
                         $('.inventory-grid table tr:eq(9)').show();
